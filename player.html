@@ -1,21 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>小雅emby客户端配置方法</title>
+    <meta charset="utf-8">
+    <title>小雅emby免搭建使用</title>
+    <!-- 关键：添加视口设置，适配移动设备 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* 响应式容器：替换固定宽度，适配不同屏幕 */
+        .center-block {
+            /* 最大宽度保留500px，小屏幕自动占满宽度 */
+            max-width: 500px;
+            /* 左右留白，避免文字贴边 */
+            width: 90%;
+            /* 居中显示 */
+            margin: 0 auto;
+            /* 增加内边距，提升移动端阅读体验 */
+            padding: 10px 0;
+            /* 统一字体大小，提升可读性 */
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        /* 媒体查询：适配小屏幕（手机） */
+        @media (max-width: 480px) {
+            .center-block {
+                /* 手机端进一步加大宽度，减少留白 */
+                width: 95%;
+                /* 缩小行高，适配小屏幕 */
+                line-height: 1.6;
+            }
+            /* 手机端标题字体稍作调整 */
+            h1 {
+                margin: 15px 0;
+            }
+        }
+
+        /* 保留原有红色提示样式，优化显示 */
+        .warning {
+            color: #ff0000;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        /* 优化链接样式，提升点击体验 */
+        a {
+            color: #0969da; /* GitHub风格链接色，更醒目 */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
+<body>
+    <div class="center-block">
+        <h1 style="font-size: 18px;">Hello 大家好！！！</h1>
+        我是淘宝店【<a href="https://shop362845264.taobao.com/?spm=a230r.7195193.1997079397.2.641f777bEP77wp" target="_blank" rel="noopener noreferrer">&nbsp;&nbsp;运维小铺&nbsp;&nbsp;</a>】，点击或淘宝里搜索店铺名都能找到我，主要帮大家搭建私人影视资源库，也可以直接用我们搭建好了的小雅Emby影视库账号包月包年。
+        
+        <h1 class="warning">重要提示：</h1>
+        禁止这种操作：一个片子看几秒就退出来，然后短时间内点了很多个片子，这样会导致网盘被封控，播放异常！！！
+    </div>
+</body>
 </html>
 
-<br>
-   <style>
-    .center-block {
-       width: 500px;
-       margin: 0 auto;
-     }
-   </style>
-   <div class="center-block">
-      <h1 style="font-size: 18px;">Hello 大家好！！！</h1>
-      我是淘宝店【<a href="https://shop362845264.taobao.com/?spm=a230r.7195193.1997079397.2.641f777bEP77wp" target="_blank">&nbsp;&nbsp;运维小铺&nbsp;&nbsp;</a>】，点击或淘宝里搜索店铺名都能找到我，主要帮大家搭建私人影视资源库。（AList\CD2云盘挂载、小雅emby、AList-TvBox）
+
+
 <br>
 <br>
 搭建后，观看端设备上，配置好如下连接参数：<br>
